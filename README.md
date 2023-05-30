@@ -1,7 +1,7 @@
 
 # WeWiMi
 
-*Note: this was done as a school project in order to learn Java*
+*Note: this was done as a school project in order to learn Java.*
 
 WeWiMi is a trivia game inspired by the British Hitshow "Who Wants to Be a Millionaire?".
 It is build with JavaFX (OpenJFX).
