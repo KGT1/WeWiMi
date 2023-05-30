@@ -1,0 +1,47 @@
+/* .question-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-max-width: 180px;
+    -fx-max-height: 90px;
+    -fx-min-height: 90px;
+    -fx-max-width: 180px;
+    -fx-background-color: #9913a5;
+    background-color: #9913a5;
+} */
+
+#rootPane {
+    -fx-background-image: url("../images/background.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+	background-size: cover;
+}
+
+.answer-button {
+	-fx-font-weight: bold;
+	-fx-background-color: #2196f3;
+	-fx-front-size: 16;
+	-fx-text-fill: white;
+    -fx-min-width: 150px;
+    -fx-min-height: 100px;
+    -fx-max-width: 150px;
+    -fx-max-height: 100px;
+}
+
+.symbol-button {
+    -fx-font-size: 10px;
+    -fx-min-width: 150px;
+    -fx-min-height: 25px;
+    -fx-max-width: 150px;
+    -fx-max-height: 25px;
+}
+
+.level-list-view {
+    -fx-pref-width: 200px;
+    -fx-pref-height: 405px;
+    -fx-cell-size: 2px;
+}
+
+.level-list {
+    -fx-padding: 10px;
+    -fx-background-color: #F0F0F0;
+}

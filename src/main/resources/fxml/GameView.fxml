@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="rootPane" prefHeight="500.0" prefWidth="900.0" alignment="CENTER" stylesheets="@../css/GameView.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="controllers.GameController">
+    <children>
+        <BorderPane prefHeight="400.0" prefWidth="600.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: rgba(161, 161, 161, 0.656);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+        <left>
+                <!-- Main View -->
+                <VBox prefWidth="400" spacing="10" alignment="CENTER">
+                    <StackPane prefHeight="100" prefWidth="200"  maxHeight="100" maxWidth="200" >
+                        <Text fx:id="question" text="Question" styleClass="question-label" />
+                    </StackPane>
+                    <GridPane alignment="CENTER">
+                        <Button fx:id="Answer1" text="Answer1" styleClass="answer-button" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                        <Button fx:id="Answer2" text="Answer2" styleClass="answer-button" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                        <Button fx:id="Answer3" text="Answer3" styleClass="answer-button" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <Button fx:id="Answer4" text="Answer4" styleClass="answer-button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    </GridPane>
+                    <GridPane alignment="CENTER">
+                        <Button text="Ask One of the Audience" styleClass="symbol-button" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                        <Button fx:id="FiFi" text="50:50 (Fifty-Fifty)" styleClass="symbol-button" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                        <Button text="Phone a Friend" styleClass="symbol-button" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <Button text="Ask the Audience" styleClass="symbol-button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    </GridPane>
+                </VBox>
+            </left>
+            <right>
+                <!-- Level List -->
+                <VBox prefWidth="200" spacing="10" styleClass="level-list">
+                    <ListView fx:id="levelListView" styleClass="level-list-view" />
+                </VBox>
+            </right>
+        </BorderPane>
+    </children>
+</VBox>
