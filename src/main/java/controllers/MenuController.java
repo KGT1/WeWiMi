@@ -1,19 +1,10 @@
 package controllers;
 
 import javafx.fxml.FXML;
-
 import java.io.IOException;
-import java.util.Optional;
-
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
-import javafx.scene.layout.Region;
-import models.Question;
-import javafx.scene.control.Alert.AlertType;
 
-import util.TriviaApiHandler;
 
 public class MenuController {
 
